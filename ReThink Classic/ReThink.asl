@@ -1,11 +1,17 @@
+// Made by Kaygu
+// Currently this autoloader splits every puzzle room but start and last split are NOT working
+// If you have any questions or requests leave an issue on github or contact me on twitter @kaaygu
+// I'm not reverse engineering this game to improve the autoloader unless this category becomes more popular
+
+
 state("RT_RW-Win64-Shipping")
 {
   int levelCounter: 0x03029A38, 0x10, 0x58, 0x9C8;
   // todo:
   // - find values:
-  // -- new game
-  // -- start countdown
-  // -- fade to text (end)
+  // -- new game (auto reset)
+  // -- start countdown (start)
+  // -- fade to text (last split)
 }
 
 init
@@ -16,7 +22,7 @@ init
 
 start
 {
-  // Should start timer once the couldown is finished in start room, or 30ish seconds avfter black text
+  // Should start timer once the couldown is finished in start room, or 30ish seconds after black text
 }
 
 update
