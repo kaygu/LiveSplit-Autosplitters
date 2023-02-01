@@ -50,10 +50,9 @@ reset
   // should reset when pressing "New Game" but idk how to find that trigger yet
 }
 
-onReset 
+onStart
 {
   print("Timer has been reset");
-  // Reset split vars
   vars.oldSplit = 0;
   vars.split = 0;
 }
